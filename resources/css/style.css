@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Black.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 48px;
+}
+.quote p {
+    font-family: 'Roboto', sans-serif ;
+    font-weight: light;
+    font-style: italic;
+}
+.logo {
+    font-size: 24px;
+}
+.quote p, h2 {
+    font-size: 36px; 
+}
+ul, li {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+ul, li:before {
+    content: '✓ ';
+}
+.logo, .nav a, button a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+button, .cta {
+    background-color: #3882f6;
+    border-radius: 3px;
+}
+
+.header, footer, .page-intro {
+    background-color: #1f2937;
+
+}
+.quote {
+    background-color: #E5E7EB;
+}
+.nav a, .hero-main p , footer p, .cta p{
+    color: #E5E7EB;
+}
+.logo, .hero h1, button a, .cta h3, .page-intro {
+    color: #F9faf8;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 150px 
+}
+.nav a{
+    margin-left: 10px; 
+}
+.hero, .contact-container  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 150px;
+
+}
+.hero-main, .contact-main {
+    width: 500px;
+    padding: 10px 20px 10px 0px;
+}
+.hero img, .contact-container img  {
+    width: 500px;
+    height:225px;
+}
+.services h2, .contact h2, .packages h2 {
+    margin: 40px 0;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+}
+.container-item {
+    width: 150px;
+    text-align: center;
+    margin: 0px 20px 50px 20px;
+}
+
+.container-item img {
+    width: 150px;
+    border-radius: 5px;
+}
+.quote {
+    padding: 120px 250px 70px 250px;
+}
+.quote span {
+    text-align: end;
+    font-weight: bold;
+    display: block;
+}
+.cta {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 200px;
+}
+.cta button {
+    border: 2px solid #F9faf8
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    text-align: center;
+}
+.page-intro {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+}
+.packages-container {
+    display: flex;
+    align-items: center;
+    margin: 50px 40px 100px 40px;
+}
+.package-item {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E5E7EB;
+    margin: 20px;
+    padding:30px;
+    border-radius: 3px;
+    text-align: center;
+}
+.package-item > * {
+    flex: 1 1 100%;
+    margin: 5px;
+    line-height: 3;
+} 
+.contact-main p {
+    padding: 5px;
+}
