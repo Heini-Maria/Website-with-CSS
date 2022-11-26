@@ -32,7 +32,7 @@ h1 {
     font-style: normal;
     font-size: 48px;
 }
-.quote p {
+.quote blockquote {
     font-family: 'Roboto', sans-serif ;
     font-weight: light;
     font-style: italic;
@@ -40,7 +40,7 @@ h1 {
 .logo {
     font-size: 24px;
 }
-.quote p, h2 {
+.quote blockquote, h2 {
     font-size: 36px; 
 }
 ul, 
@@ -65,6 +65,7 @@ button,
     border-radius: 3px;
 }
 .header, 
+.hero,
 footer, 
 .page-intro {
     background-color: #1f2937;
@@ -73,7 +74,7 @@ footer,
     background-color: #E5E7EB;
 }
 .nav a, 
-.hero-main p , 
+.hero p , 
 footer p, 
 .cta p{
     color: #E5E7EB;
@@ -84,6 +85,11 @@ button a,
 .cta h3, 
 .page-intro {
     color: #F9faf8;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 150px 
 }
 .header-nav {
     display: flex;
@@ -106,7 +112,7 @@ button a,
     width: 500px;
     padding: 10px 20px 10px 0px;
 }
-    .hero img, 
+    aside img, 
     .contact-container img  {
         width: 500px;
         height:225px;
