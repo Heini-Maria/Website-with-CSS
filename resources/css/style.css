@@ -43,14 +43,15 @@ h1 {
 .quote blockquote, h2 {
     font-size: 36px; 
 }
-ul, 
-li {
+
+ul li,
+ul.features li {
     list-style:none;
     margin: 0;
     padding: 0;
 }
-ul, 
-li:before {
+
+ul.features li:before {
     content: '✓ ';
 }
 button {
@@ -95,7 +96,7 @@ button a,
     display: flex;
     justify-content: space-between;
 }
-    .nav a{
+    .nav li{
         margin-left: 10px; 
     }    
 .hero, 
@@ -159,13 +160,7 @@ button a,
     .cta button {
         border: 2px solid #F9faf8
     }
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    text-align: center;
-}
+
 .page-intro {
     height: 300px;
     display: flex;
@@ -192,7 +187,16 @@ footer {
         flex: 1 1 100%;
         margin: 5px;
         line-height: 3;
-    } 
+        padding: 0;
+    }
+    
 .contact-main p {
     padding: 5px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    text-align: center;
 }
