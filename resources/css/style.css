@@ -43,16 +43,15 @@ h1 {
 .quote p, h2 {
     font-size: 36px; 
 }
-ul, li {
+ul, 
+li {
     list-style:none;
     margin: 0;
     padding: 0;
 }
-ul, li:before {
+ul, 
+li:before {
     content: '✓ ';
-}
-.logo, .nav a, button a {
-    text-decoration: none;
 }
 button {
     border: none;
@@ -60,22 +59,30 @@ button {
     margin-top: 10px;
     font-weight: bold;
 }
-button, .cta {
+button, 
+.cta {
     background-color: #3882f6;
     border-radius: 3px;
 }
-
-.header, footer, .page-intro {
+.header, 
+footer, 
+.page-intro {
     background-color: #1f2937;
-
 }
 .quote {
     background-color: #E5E7EB;
 }
-.nav a, .hero-main p , footer p, .cta p{
+.nav a, 
+.hero-main p , 
+footer p, 
+.cta p{
     color: #E5E7EB;
 }
-.logo, .hero h1, button a, .cta h3, .page-intro {
+.logo, 
+.hero h1, 
+button a, 
+.cta h3, 
+.page-intro {
     color: #F9faf8;
 }
 .header-nav {
@@ -83,25 +90,35 @@ button, .cta {
     justify-content: space-between;
     padding: 5px 150px 
 }
-.nav a{
-    margin-left: 10px; 
-}
-.hero, .contact-container  {
+    .nav a{
+        margin-left: 10px; 
+    }    
+.hero, 
+.contact-container  {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px 150px;
 
 }
-.hero-main, .contact-main {
+.hero-main, 
+.contact-main {
     width: 500px;
     padding: 10px 20px 10px 0px;
 }
-.hero img, .contact-container img  {
-    width: 500px;
-    height:225px;
-}
-.services h2, .contact h2, .packages h2 {
+    .hero img, 
+    .contact-container img  {
+        width: 500px;
+        height:225px;
+    }
+    .logo, 
+    .nav a, 
+    button a {
+        text-decoration: none;
+    }
+.services h2, 
+.contact h2, 
+.packages h2 {
     margin: 40px 0;
     text-align: center;
 }
@@ -109,24 +126,24 @@ button, .cta {
     display: flex;
     justify-content: center;
 }
-.container-item {
-    width: 150px;
-    text-align: center;
-    margin: 0px 20px 50px 20px;
-}
+    .container-item {
+        width: 150px;
+        text-align: center;
+        margin: 0px 20px 50px 20px;
+    }
 
-.container-item img {
-    width: 150px;
-    border-radius: 5px;
-}
+    .container-item img {
+        width: 150px;
+        border-radius: 5px;
+    }
 .quote {
     padding: 120px 250px 70px 250px;
 }
-.quote span {
-    text-align: end;
-    font-weight: bold;
-    display: block;
-}
+    .quote span {
+        text-align: end;
+        font-weight: bold;
+        display: block;
+    }
 .cta {
     display: flex;
     height: 120px;
@@ -134,9 +151,9 @@ button, .cta {
     align-items: center;
     margin: 50px 200px;
 }
-.cta button {
-    border: 2px solid #F9faf8
-}
+    .cta button {
+        border: 2px solid #F9faf8
+    }
 footer {
     display: flex;
     align-items: center;
@@ -156,21 +173,21 @@ footer {
     align-items: center;
     margin: 50px 40px 100px 40px;
 }
-.package-item {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #E5E7EB;
-    margin: 20px;
-    padding:30px;
-    border-radius: 3px;
-    text-align: center;
-}
-.package-item > * {
-    flex: 1 1 100%;
-    margin: 5px;
-    line-height: 3;
-} 
+    .package-item {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #E5E7EB;
+        margin: 20px;
+        padding:30px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .package-item > * {
+        flex: 1 1 100%;
+        margin: 5px;
+        line-height: 3;
+    } 
 .contact-main p {
     padding: 5px;
 }
