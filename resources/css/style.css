@@ -145,7 +145,7 @@ button a,
 .quote {
     padding: 120px 250px 70px 250px;
 }
-    .quote span {
+    .quote cite {
         text-align: end;
         font-weight: bold;
         display: block;
