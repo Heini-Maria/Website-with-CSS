@@ -91,10 +91,9 @@ button a,
     justify-content: space-between;
     padding: 5px 150px 
 }
-.header-nav {
+.nav ul{
     display: flex;
     justify-content: space-between;
-    padding: 5px 150px 
 }
     .nav a{
         margin-left: 10px; 
