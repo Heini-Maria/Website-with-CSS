@@ -6,6 +6,7 @@ preview go to: https://heini-maria.github.io/Website-with-CSS/
  
 
 ## skills used:
+
 *HTML
 *CSS
 *GitHub
