@@ -140,6 +140,7 @@ button a,
     .contact-container img  {
         width: 500px;
         height:225px;
+        margin-left: 2rem;
     }
     .logo, 
     .nav a, 
