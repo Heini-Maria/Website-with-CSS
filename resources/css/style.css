@@ -26,203 +26,345 @@ html {
     font-style: normal;
     font-size: 18px;
 }
-
+:root {
+    --color-bg: #F9faf8;
+    --color-bg-variant: #E5E7EB;
+    --color-primary: #1f2937;
+    --accent-color: #3882f6;
+    --color-dark: #000;
+}
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin: 3rem;
+    text-align: center;
 }
 h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
-figcaption {
-    margin-top: 0.5rem
+a {
+    text-decoration: none;
 }
 li,
 a {
     font-size: 1.6rem;
 }
-.quote blockquote {
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+blockquote {
     font-family: 'Roboto', sans-serif ;
+    text-align: center;
     font-weight: light;
     font-style: italic;
 }
-.logo {
-    font-size: 2rem;
-}
-.quote blockquote, h2 {
-    font-size: 36px; 
-}
-
-ul li,
-ul.features li {
+ul>li {
     list-style:none;
     margin: 0;
     padding: 0;
-}
-
-ul.features li:before {
-    content: '✓ ';
 }
 button {
     border: none;
     padding: 10px 30px;
     margin-top: 10px;
+    border-radius: 10px;
     font-weight: bold;
+    background-color: var(--accent-color);
 }
 button>a {
     font-size: 1.2rem;
+    color: var(--color-bg)
+}
+button:hover {
+    border: 3px solid var(--color-bg);
 }
 
-button, 
-.cta {
-    background-color: #3882f6;
-    border-radius: 10px;
+.logo {
+    font-size: 2rem;
 }
 .header, 
-.hero,
-footer, 
-.page-intro {
-    background-color: #1f2937;
+.hero {
+    background-color: var(--color-primary);
 }
-.quote {
-    background-color: #E5E7EB;
+.nav a {
+    margin-left: 1.4rem;
+    color: var(--color-bg)
 }
-.nav a, 
-.hero p , 
-footer p, 
-.cta p{
-    color: #E5E7EB;
-}
-.logo, 
-.hero h1, 
-button a, 
-.cta h3, 
-.page-intro {
-    color: #F9faf8;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 10rem;
+.nav a:hover {
+    text-decoration: underline;
 }
 .nav ul{
     display: flex;
     justify-content: space-between;
 }
-    .nav li{
-        margin-left: 10px; 
-    }    
-.hero, 
-.contact-container  {
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+.header a.logo {
+    margin: 0;
+    color: var(--color-bg)
+}
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6rem 10rem 6rem 10rem;
+    padding: 4rem 6rem 6rem 6rem;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
+    color: var(--color-bg);
 }
-.contact {
-    min-height: 50vh;
+.hero-main>button {
+    margin-top: 1rem;
 }
-.hero-main, 
-.contact-main {
+.hero-main {
+    width: 100%;
+}
+.hero>aside>img {
     width: 500px;
+    height: auto;
+    margin-left: 2rem;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
 }
-    aside img, 
-    .contact-container img  {
-        width: 500px;
-        height:225px;
-        margin-left: 2rem;
-    }
-    .logo, 
-    .nav a, 
-    button a {
-        text-decoration: none;
-    }
-.services h2, 
-.contact h2, 
-.packages h2 {
-    margin: 40px 0;
-    text-align: center;
-}
+
 .services-container {
     display: flex;
     justify-content: center;
 }
-    .container-item {
-        width: 150px;
-        text-align: center;
-        margin: 0px 20px 50px 20px;
-    }
-
-    .container-item img {
-        width: 150px;
-        border-radius: 5px;
-    }
-.quote {
-    padding: 120px 250px 70px 250px;
+.container-item {
+    max-width: 200px;
+    text-align: center;
+    margin: 2rem 1.2rem 5rem 1.2rem;
 }
-    .quote cite {
-        text-align: end;
-        font-weight: bold;
-        display: block;
-    }
+.container-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.quote {
+    background-color: var(--color-bg-variant);
+    padding: 4rem 6rem;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
+}
+.quote>blockquote {
+    font-size: 36px; 
+}
+.quote cite {
+    text-align: end;
+    font-weight: bold;
+    display: block;
+}
+
 .cta {
     display: flex;
-    height: 120px;
+    min-height: 120px;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 200px;
-    padding: 5rem 1rem;
+    margin: 4rem 6rem;
+    padding: 3rem;
+    background-color: var(--accent-color);
+    color: var(--color-bg);
+    border-radius: 10px;
+    border: 3px solid transparent;
 }
-    .cta button {
-        border: 2px solid #F9faf8
-    }
+.cta button {
+    border: 2px solid #F9faf8;
+}
+.cta button:hover {
+    border: 3px solid #F9faf8;
+}
 
 .page-intro {
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 150px;
+    padding: 4rem 6rem;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
 }
 .packages-container {
     display: flex;
     align-items: center;
-    margin: 50px 40px 100px 40px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 4rem 6rem;
+    column-gap: 2rem;
 }
-    .package-item {
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #E5E7EB;
-        margin: 20px;
-        padding:30px;
-        border-radius: 3px;
-        text-align: center;
-    }
-    .package-item > * {
-        flex: 1 1 100%;
-        margin: 5px;
-        line-height: 3;
-        padding: 0;
-    }
-    
+.package-item {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E5E7EB;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
+}
+.package-item > * {
+    flex: 1 1 100%;
+    margin: 5px;
+    line-height: 3;
+    padding: 0;
+}
+ul.features li:before {
+    content: '✓ ';
+}
+
+.contact {
+    min-height: 50vh;
+}
+.contact-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem 6rem 6rem;
+    min-height: 52vh;
+}
+.contact-container img  {
+    width: 500px;
+    height: auto;
+    box-shadow: 2px 4px 5px 2px rgb(58 58 58 / 30%);
+}
+.contact-main {
+    width: 500px;
+}
 .contact-main p {
     padding: 5px;
 }
+.page-intro {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 80px;
     text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+@media screen and (min-width: 2048px) {
+    body {
+        margin: 0 10%;
+    }
+    main {
+        min-height: 80vh;
+    }
+}
+@media screen and (max-width: 1024px) {
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    margin: 1rem 1.5rem;
+}
+p {
+    font-size: 1.2rem;
+}
+a {
+    font-size: 1.4rem;
+}
+.header {
+    padding: 1rem 1.5rem;
+}
+.hero {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero>aside>img {
+    display: none;
+}
+.cta {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.cta>button {
+    margin-top: 1.5rem;
+}
+.packages-container {
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem 1.5rem;
+}
+.contact-container {
+    padding: 1rem 1.5rem;
+}
+.contact-container img {
+    width: 300px;
+}
+.page-intro {
+    padding: 1rem 1.5rem;
+}
+.page-intro>h1 {
+    text-align: center;
+}
+}
+@media screen and (max-width: 600px) {
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    margin: 1.5rem;
+}
+a {
+    font-size: 1.2rem;
+}
+a.logo {
+    font-size: 1.5rem;
+}
+.nav ul {
+    flex-direction: column;
+}
+.nav a {
+    margin-left: 0.5rem;
+}
+a.active {
+    display: none;
+}
+.hero {
+    padding: 2rem;
+}
+.services-container {
+    flex-wrap: wrap;
+}
+.container-item {
+    max-width: 150px;
+}
+.quote {
+    padding: 1rem 1.5rem;
+}
+.cta {
+    margin: 2rem 0;
+    border-radius: 0;
+}
+.contact-main {
+    width: 100%;
+}
+.contact-container {
+    flex-direction: column-reverse
+}
+.contact-container img {
+    margin-bottom: 1rem;
+}
+.contact-container p {
+    text-align: center;
+    width:100%;
+}
 }
